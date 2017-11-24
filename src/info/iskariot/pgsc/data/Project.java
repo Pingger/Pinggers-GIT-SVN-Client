@@ -3,12 +3,17 @@
  */
 package info.iskariot.pgsc.data;
 
+import java.util.Collection;
+
 /**
  * @author Pingger Shikkoken
  *
  */
 public interface Project
 {
+	/** @return a list of the Branches within this Project */
+	public Collection<Branch> getBranches();
+	
 	/**
 	 * @return the Description of this Project
 	 */
